@@ -1,0 +1,6 @@
+export { default as BarChart } from './charts/Bar'
+export { default as PieChart } from './charts/Pie'
+export { default as PointChart } from './charts/Point'
+export { default as PolylineChart } from './charts/Polyline'
+export { default as RadarChart } from './charts/Radar'
+export { default as RingChart } from './charts/Ring'
