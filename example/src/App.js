@@ -18,7 +18,7 @@ var cfg = {
 var data = [
   {
     name: 'JS',
-    percent: '100%'
+    percent: '70%'
   },
   {
     name: 'HTML',
@@ -52,10 +52,10 @@ class App extends React.PureComponent {
       <div style={{ margin: '50px 30px' }}>
         <BarChart data={data} config={cfg} />
         <PieChart data={data} config={cfg} />
+        <RingChart data={data} config={cfg} />
         <PointChart data={data} config={cfg} />
         <PolylineChart data={data} config={cfg} />
         <RadarChart data={data} config={cfg} />
-        <RingChart data={data} config={cfg} />
       </div>
     )
   }

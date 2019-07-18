@@ -41,7 +41,9 @@ class Bar extends React.PureComponent {
 
     return (
       <Base name='bar' config={config}>
-        {this.renderData()}
+        <div className="bar-chart-wrap">
+          {this.renderData()}
+        </div>
       </Base>
     )
   }
