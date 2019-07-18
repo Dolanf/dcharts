@@ -9,7 +9,7 @@ import {
 } from '../../src'
 
 var cfg = {
-  width: 530,
+  width: 400,
   height: 400,
   yKey: 'percent',
   xKey: 'name'
@@ -18,19 +18,31 @@ var cfg = {
 var data = [
   {
     name: 'JS',
-    percent: '80%'
+    percent: '100%'
   },
   {
     name: 'HTML',
-    percent: '70%'
+    percent: '60%'
   },
   {
     name: 'CSS',
-    percent: '50%'
+    percent: '40%'
   },
   {
     name: 'React',
-    percent: '60%'
+    percent: '62%'
+  },
+  {
+    name: 'Vue',
+    percent: '23%'
+  },
+  {
+    name: 'Angular',
+    percent: '42%'
+  },
+  {
+    name: 'Flutter',
+    percent: '10%'
   }
 ]
 
