@@ -55,7 +55,7 @@ class App extends React.PureComponent {
         <RingChart data={data} config={cfg} />
         <PointChart data={data} config={cfg} />
         <PolylineChart data={data} config={cfg} />
-        {/* <RadarChart data={data} config={cfg} /> */}
+        <RadarChart data={data} config={cfg} />
       </div>
     )
   }

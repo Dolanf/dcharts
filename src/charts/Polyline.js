@@ -131,8 +131,7 @@ class Polyline extends React.PureComponent {
       ctx.moveTo(x, y)
       ctx.arc(x, y, 3, 0, 2 * Math.PI)
 
-      ctx.strokeStyle = item.color ? item.color : colors.pop()
-      ctx.fillStyle = ctx.strokeStyle
+      ctx.fillStyle = ctx.strokeStyle = item.color ? item.color : colors.pop()
       ctx.stroke()
       ctx.fill()
 
