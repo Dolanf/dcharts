@@ -7,10 +7,11 @@ import {
   RadarChart,
   RingChart
 } from '../../src'
+import './layout.less'
 
 var cfg = {
-  width: 400,
-  height: 400,
+  width: 300,
+  height: 300,
   yKey: 'percent',
   xKey: 'name'
 }
@@ -50,12 +51,24 @@ class App extends React.PureComponent {
   render () {
     return (
       <div style={{ margin: '50px 30px' }}>
-        <BarChart data={data} config={cfg} />
-        <PieChart data={data} config={cfg} />
-        <RingChart data={data} config={cfg} />
-        <PointChart data={data} config={cfg} />
-        <PolylineChart data={data} config={cfg} />
-        <RadarChart data={data} config={cfg} />
+        <div className="chart-wrap">
+          <BarChart data={data} config={cfg} />
+        </div>
+        <div className="chart-wrap">
+          <PieChart data={data} config={cfg} />
+        </div>
+        <div className="chart-wrap">
+          <RingChart data={data} config={cfg} />
+        </div>
+        <div className="chart-wrap">
+          <PointChart data={data} config={cfg} />
+        </div>
+        <div className="chart-wrap">
+          <PolylineChart data={data} config={cfg} />
+        </div>
+        <div className="chart-wrap">
+          <RadarChart data={data} config={cfg} />
+        </div>
       </div>
     )
   }

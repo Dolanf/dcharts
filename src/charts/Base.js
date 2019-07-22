@@ -20,7 +20,7 @@ class Base extends React.PureComponent {
       height: config.height || height
     }
 
-    return <div name={`${name}Chart`} style={divStyle}>
+    return <div className="chart-root" name={`${name}Chart`} style={divStyle}>
       {children}
     </div>
   }
